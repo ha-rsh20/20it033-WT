@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: rgba(46, 99, 96, 0.027);
+        }
+        .vertical-center {
+        margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .container{
+            margin:auto;
+            width:50%;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(226, 203, 176);
+        }
+    </style>
+</head>
+<body>
+    <form action="abcd.html" method="post" class="container">
+        <br>
+        <label><b>Full Name:</b></label>
+        <input type="text" name="name" placeholder="FirstName MiddleName LastName" required>
+        <br>
+        <br>
+        <label><b>Date Of Birth:</b></label>
+        <input type="date" name="dob" required>
+        <br>
+        <br>
+        <label><b>Age:</b></label>
+        &nbsp;
+        &nbsp;
+        
+        <label>5-13</label>
+        <input type="radio" id="j" name="age">
+        <label>14/15</label>
+        <input type="radio" id="m" name="age">
+        <label>16/17</label>
+        <input type="radio" id="s" name="age">
+        <br>
+        <br>
+        <label><b>District:</b></label>
+        <select name="dist" id="dist" required>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Surat">Surat</option>
+            <option value="Rajkot">Rajkot</option>
+        </select>
+        <br>
+        <hr>
+        <input type="checkbox" required>
+        &nbsp;
+        <label><i>I accept all the terms & conditions.</i></label>
+        <br>
+        <button class="btn btn-info">Submit</button>
+        <hr>
+        <i><a href="info.html" target="_blank">click to read terms & conditions.</a></i>
+    </form>
+</body>
+</html>
