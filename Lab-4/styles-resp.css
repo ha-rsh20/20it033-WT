@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(197, 209, 189);
+    background-color: red;
 }
 .container{
     width:100%;
@@ -41,4 +41,14 @@ body{
 }
 .flex-cont{
     display: flex;
+}
+@media only screen and (min-width:768px){
+    body{
+        background-color: yellow;
+    }
+}
+@media only screen and (min-width:1280px){
+    body{
+        background-color: green;
+    }
 }
