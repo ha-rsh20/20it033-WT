@@ -1,0 +1,52 @@
+*{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.center {
+    text-align: center;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+}
+.btn{
+    background-color: green;
+    color: honeydew;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+}  
+li,b {
+    display: inline;
+    color: honeydew;
+    border-radius: 3px;
+    text-decoration: none;
+}
+li:hover,b:hover{
+    background-color: black;
+}
+li:active,b:active{
+    background-color: green;
+}
+a {
+    text-decoration: none;
+}
+.text{
+    float: right;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./Charusat.png");
+}
