@@ -1,0 +1,24 @@
+body{
+    background-color: darkcyan;
+}
+.boat {
+    width: 200px;
+    height: 200px;
+    background-image: url("boat2.png");
+    background-color: darkcyan;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top:0px;
+    left:0px;
+    animation-name: anime;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes anime {
+    0%   {left:0%; top:0px;}
+    50%  {left:100%; top:0px;}
+    100% {left:0%; top:0px;}
+  }
