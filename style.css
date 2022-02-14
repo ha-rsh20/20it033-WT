@@ -1,9 +1,0 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-.box1{
-    height: 99%;
-    border: 3px solid green;
-}
