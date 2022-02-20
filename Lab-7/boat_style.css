@@ -14,6 +14,11 @@ body{
     animation-duration: 13s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    transition: width 1s,height 2s;
+  }
+  .boat:hover{
+    width: 200px;
+    height: 200px;
   }
   @keyframes anime {
     0%   {left:0%;}
@@ -22,7 +27,7 @@ body{
     25%  {transform: rotate(-15deg);}
     30%  {transform: rotate(15deg);}
     35%  {transform: rotate(0deg);}
-    50%  {left:85%;}
+    50%  {left: calc(100% - 150px);}
     65%  {transform: rotate(0deg);}
     70%  {transform: rotate(15deg);}
     75%  {transform: rotate(-15deg);}
