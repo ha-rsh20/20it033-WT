@@ -2,8 +2,8 @@ body{
     background-color: rgb(105, 176, 218);
 }
 .boat {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-image: url("boat.png");
     background-size: contain;
     background-repeat: no-repeat;
