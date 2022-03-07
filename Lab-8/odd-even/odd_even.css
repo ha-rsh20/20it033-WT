@@ -1,0 +1,10 @@
+.odd{
+    display: inline;
+    color: black;
+    background-color: red;
+}
+.even{
+    display: inline;
+    color: white;
+    background-color: green;
+}
