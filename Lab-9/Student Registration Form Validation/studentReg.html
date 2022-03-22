@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link>
+<link rel="stylesheet" href="./studentReg.css">
+</head>
+<body>
+  <form action="abcd.php">
+    <div class="wrapper rounded bg-white">
+      <div class="h3">Registration Form</div>
+      <div class="form">
+          <div class="row">
+              <div class="col-md-6 mt-md-0 mt-3"> <label>First Name</label> <input id="idfname" type="text" class="form-control"> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <label>Last Name</label> <input id="idlname" type="text" class="form-control"> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <span id="fnameid" class="error-hide">Fname should not empty!</span> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <span id="lnameid" class="error-hide">Lname should not empty!</span> </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 mt-md-0 mt-3"> <label>Birthday</label> <input id="idbdate" type="date" class="form-control"> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <label>Gender</label>
+                  <div class="d-flex align-items-center mt-2">
+                     <label class="option"> <input onclick="rad();" type="radio" name="radio">Male <span class="checkmark"></span> </label> 
+                     <label class="option ms-4"> <input onclick="rad();" type="radio" name="radio">Female <span class="checkmark"></span> </label> 
+                  </div>
+              </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <span id="bdateid" class="error-hide">Birthday should not empty!</span> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <span id="genid" class="error-hide">Gender should be selected!</span> </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 mt-md-0 mt-3"> <label>Email</label> <input id="idemail" type="email" class="form-control"> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <label>Phone Number</label> <input id="idphone" type="tel" class="form-control"> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <span id="emailid" class="error-hide">E-mail should not empty!</span> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <span id="phoneid" class="error-hide">Phone Number invalid!</span> </div>  
+          </div>
+          <div class=" my-md-2 my-3"> <label>Subject</label> <select id="sub">
+                  <option value="0" selected hidden>Choose Option</option>
+                  <option value="Maths">Maths</option>
+                  <option value="Science">Science</option>
+                  <option value="Social">Social</option>
+                  <option value="Hindi">Hindi</option>
+              </select> </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <span id="subid" class="error-hide">Subject should be selected!</span> </div>
+              <div class="input-group mb-3">
+                <div class="input-group-text">
+                  <input class="form-check-input mt-0" onclick="check();" id="idcheck" type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+                <label class="col-sm-7 col-form-label">&nbsp;&nbsp;<i>I accept all <u>terms & condi.</u> of this website.</i></label>
+              </div>
+              <div class="col-md-6 mt-md-0 mt-3"> <span id="checkid" class="error-hide">You need accept <i><u>terms & condi.</u></i> to submit!</span> </div>
+              <button class="btn btn-primary mt-3" onclick="return error();">Submit</button>
+      </div>
+      </div>
+    </div>
+  </form>
+  <script src="./studentReg.js"></script>
+</body>
+</html>
