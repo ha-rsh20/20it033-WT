@@ -1,52 +1,168 @@
-*{
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
-html, body {
-    height: 100%;
-    margin: 0;
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #a8211f;
+  color: white;
+  justify-content: center;
 }
-.center {
-    text-align: center;
-    border-radius: 10px;
+.head {
+  margin-right: 1rem;
+  font-weight: 500;
 }
-.container{
-    display: flex;
+.logo {
+  width: 25rem;
+  text-align: center;
+  color: #337ab7;
+  font-size: 1.2rem;
+  padding-right: 5rem;
 }
-.btn{
-    background-color: green;
-    color: honeydew;
+.menubar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(37, 37, 37);
-    border-radius: 10px;
-}  
-li,b {
-    display: inline;
-    color: honeydew;
-    border-radius: 3px;
-    text-decoration: none;
+.menu {
+  padding-right: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
-li:hover,b:hover{
-    background-color: black;
+.photo {
+  justify-content: center;
 }
-li:active,b:active{
-    background-color: green;
+.ex {
+  text-align: center;
+  margin-top: -10rem;
+  color: white;
 }
-a {
-    text-decoration: none;
+.ad {
+  color: white;
 }
-.text{
-    float: right;
+.address {
+  color: #959595;
+  padding-left: 7rem;
 }
-.img{
-    width: 200px;
-    height: 200px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("./Charusat.png");
+.footer {
+  background-color: #20232e;
+}
+.bi {
+  padding-right: 1rem;
+}
+.links {
+  font-weight: 400;
+}
+.options {
+  float: right;
+  padding-right: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.end {
+  display: flex;
+  flex-direction: row;
+  background-color: #a8211f;
+  color: white;
+  justify-content: center;
+}
+.final_footer {
+  margin-right: 10rem;
+  font-weight: 500;
+}
+.sliderbar {
+  float: left;
+  position: relative;
+  height: 0.5rem;
+  top: -32rem;
+}
+.facebook {
+  color: white;
+  background-color: #3b5993;
+  width: 10rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.3rem;
+  transform: translateX(-6.5rem);
+  transition: all 0.5s linear;
+}
+.twitter {
+  background-color: lightskyblue;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.3rem;
+  transform: translateX(-6.5rem);
+  transition: all 0.5s linear;
+}
+.linkedin {
+  background-color: blue;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translateX(-6.5rem);
+  transition: all 0.5s linear;
+}
+.youtube {
+  background-color: red;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translateX(-6.5rem);
+  transition: all 0.5s linear;
+}
+.charusat {
+  color: white;
+  background-color: black;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translateX(-6.5rem);
+  transition: all 0.5s linear;
+}
+.facebook:hover {
+  transform: translateX(0);
+}
+.twitter:hover {
+  transform: translateX(0);
+}
+.linkedin:hover {
+  transform: translateX(0);
+}
+.youtube:hover {
+  transform: translateX(0);
+}
+.charusat:hover {
+  transform: translateX(0);
+}
+
+i {
+  margin-left: 5px;
+  margin-bottom: 6px;
+  font-size: 30px;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
 }
